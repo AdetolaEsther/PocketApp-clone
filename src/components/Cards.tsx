@@ -4,10 +4,16 @@ const Cards = () => {
     return (
         <div className="min-h-screen px-8 lg:px-24 py-16">
             <div className="max-w-[1200px] mx-auto">
-                <div className="relative mt-10 w-full md:w-1/2">
+                <div className="relative mt-10 w-full ">
+                                        <div className="flex items-center  mb-4">
+
                     <h1 className="text-8xl font-extrabold  text-[#212529]">
                         Cards{" "}
                     </h1>
+                    <button className="p-2 rounded-4xl text-[#212529] font-bold flex items-center gap-1 bg-[#f4f3f5] ">
+                        coming soon
+                    </button>
+                    </div>
                     <h2 className="text-4xl font-extrabold  text-[#98AFC7]">
                         Enjoy the flexibility of Pocket Virtual and Physical
                         Cards

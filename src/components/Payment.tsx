@@ -16,7 +16,7 @@ const Payment = () => {
 
                 <div className="mt-12 flex flex-col md:flex-row gap-6">
                     <div
-                        className="relative text-white rounded-4xl shadow-lg p-16 min-h-[700px] flex flex-col justify-between mt-12 overflow-hidden"
+                        className="relative text-white rounded-4xl shadow-lg p-16 min-h-[700px] flex flex-col justify-between mt-2 overflow-hidden"
                         style={{
                             backgroundColor: "#6610f2",
                             backgroundImage:

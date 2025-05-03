@@ -5,7 +5,7 @@ const Groups = () => {
     return (
         <div className="min-h-screen px-8 lg:px-24 py-16">
             <div className="max-w-[1200px] mx-auto">
-                <div className="relative mt-10 w-full md:w-1/2">
+                <div className="relative mt-10 w-full ">
                     <h1 className="text-8xl font-extrabold text-[#212529]">
                         Groups
                     </h1>
@@ -15,7 +15,6 @@ const Groups = () => {
                 </div>
 
                 <div className="mt-12 flex flex-col md:flex-row gap-6">
-                    {/* First Card */}
                     <div className="w-full md:w-1/2">
                         <div
                             className="relative rounded-4xl shadow-lg p-16 h-[700px] flex flex-col justify-between overflow-hidden"
@@ -44,7 +43,6 @@ const Groups = () => {
                         </div>
                     </div>
 
-                    {/* Second Card */}
                     <div className="w-full md:w-1/2">
                         <div
                             className="relative rounded-4xl shadow-lg p-16 h-[700px] flex flex-col justify-between overflow-hidden"
