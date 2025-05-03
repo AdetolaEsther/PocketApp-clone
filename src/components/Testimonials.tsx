@@ -10,7 +10,7 @@ const Testimonials = () => {
             name: "Sarah Johnson",
             userName: "@sarah_design",
             img: <Person2Icon fontSize="large" />,
-            text: "This product completely transformed my workflow. I've saved hours each week and the customer support team has been incredibly helpful with the onboarding process.",
+            text: "This product completely transformed my workflow. I&apos;ve saved hours each week and the customer support team has been incredibly helpful with the onboarding process.",
         },
         {
             name: "Michael Chen",
@@ -28,36 +28,43 @@ const Testimonials = () => {
             name: "James Wilson",
             userName: "@jwilson_tech",
             img: <Person2Icon fontSize="large" />,
-            text: "The attention to detail in this product is impressive. It's clear the team understands what users actually need rather than just adding flashy features.",
+            text: "The attention to detail in this product is impressive. It&apos;s clear the team understands what users actually need rather than just adding flashy features.",
         },
         {
             name: "Amara Patel",
             userName: "@amara_p",
             img: <Person2Icon fontSize="large" />,
-            text: "I was skeptical at first, but after using it for three months, I can't imagine going back. It's simplified our team collaboration and improved our output quality.",
+            text: "I was skeptical at first, but after using it for three months, I can&apos;t imagine going back. It&apos;s simplified our team collaboration and improved our output quality.",
         },
     ];
 
     const [currentPage, setCurrentPage] = useState(0);
     const cardsPerPage = 2;
 
- const getCurrentTestimonials = () => testimonialData.slice(currentPage * cardsPerPage, (currentPage + 1) * cardsPerPage );
+    const getCurrentTestimonials = () =>
+        testimonialData.slice(
+            currentPage * cardsPerPage,
+            (currentPage + 1) * cardsPerPage
+        );
 
+    const goToPreviousPage = () => {
+        setCurrentPage((prev) => Math.max(prev - 1, 0));
+    };
 
-   const goToPreviousPage = () => {
-       setCurrentPage((prev) => Math.max(prev - 1, 0));
-   };
-
-   const goToNextPage = () => {
-       setCurrentPage((prev) => Math.min(prev + 1,  Math.ceil(testimonialData.length / cardsPerPage) - 1 ));
-   };
-
+    const goToNextPage = () => {
+        setCurrentPage((prev) =>
+            Math.min(
+                prev + 1,
+                Math.ceil(testimonialData.length / cardsPerPage) - 1
+            )
+        );
+    };
 
     return (
         <div className="min-h-screen px-8 lg:px-24 py-16">
             <div className="max-w-[1200px] mx-auto">
                 <div className="relative mt-10 w-full">
-                    <div className="flex items-center  mb-4">
+                    <div className="flex items-center mb-4">
                         <h1 className="text-8xl font-extrabold text-[#212529]">
                             Testimonials
                         </h1>
@@ -67,8 +74,8 @@ const Testimonials = () => {
                         </button>
                     </div>
                     <h2 className="text-4xl font-semibold text-[#98AFC7]">
-                        Here's what some users who have hopped on the PocketApp
-                        train have to say.
+                        Here&apos;s what some users who have hopped on the
+                        PocketApp train have to say.
                     </h2>
                 </div>
 
@@ -95,7 +102,7 @@ const Testimonials = () => {
 
                                 <div className="flex-grow mb-4">
                                     <p className="text-lg">
-                                        "{testimonial.text}"
+                                        &quot;{testimonial.text}&quot;
                                     </p>
                                 </div>
                             </div>

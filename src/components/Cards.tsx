@@ -1,20 +1,20 @@
 import React from "react";
 import AlbumIcon from "@mui/icons-material/Album";
+
 const Cards = () => {
     return (
         <div className="min-h-screen px-8 lg:px-24 py-16">
             <div className="max-w-[1200px] mx-auto">
                 <div className="relative mt-10 w-full ">
-                                        <div className="flex items-center  mb-4">
-
-                    <h1 className="text-8xl font-extrabold  text-[#212529]">
-                        Cards{" "}
-                    </h1>
-                    <button className="p-2 rounded-4xl text-[#212529] font-bold flex items-center gap-1 bg-[#f4f3f5] ">
-                        coming soon
-                    </button>
+                    <div className="flex items-center mb-4">
+                        <h1 className="text-8xl font-extrabold text-[#212529]">
+                            Cards{" "}
+                        </h1>
+                        <button className="p-2 rounded-4xl text-[#212529] font-bold flex items-center gap-1 bg-[#f4f3f5] ">
+                            coming soon
+                        </button>
                     </div>
-                    <h2 className="text-4xl font-extrabold  text-[#98AFC7]">
+                    <h2 className="text-4xl font-extrabold text-[#98AFC7]">
                         Enjoy the flexibility of Pocket Virtual and Physical
                         Cards
                     </h2>
@@ -22,7 +22,7 @@ const Cards = () => {
 
                 <div className="mt-12 flex flex-col md:flex-row gap-6">
                     <div
-                        className="relative  rounded-4xl shadow-lg p-16 min-h-[700px] flex flex-col justify-between mt-12 overflow-hidden"
+                        className="relative rounded-4xl shadow-lg p-16 min-h-[700px] flex flex-col justify-between mt-12 overflow-hidden"
                         style={{
                             backgroundImage:
                                 "url('/wobbly-arrow-bg-2.68845e8f.png')",
@@ -33,8 +33,8 @@ const Cards = () => {
                         <div>
                             <h3 className="text-4xl font-bold mb-6">
                                 Connect your physical card to your personal
-                                Pocket, Groups, and Shops. You're in complete
-                                control.
+                                Pocket, Groups, and Shops. You&apos;re in
+                                complete control.
                             </h3>
                         </div>
 
@@ -46,6 +46,7 @@ const Cards = () => {
                             />
                         </div>
                     </div>
+
                     <div
                         className="relative rounded-4xl shadow-lg p-16 min-h-[700px] flex flex-col justify-between mt-12 overflow-hidden"
                         style={{
