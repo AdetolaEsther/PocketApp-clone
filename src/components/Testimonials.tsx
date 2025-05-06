@@ -77,8 +77,8 @@ const Testimonials = () => {
                         </button>
                     </div>
                     <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#98AFC7]">
-                        Here's what some users who have hopped on the PocketApp
-                        train have to say.
+                        Here&apos;s what some users who have hopped on the
+                        PocketApp train have to say. train have to say.
                     </h2>
                 </div>
 
