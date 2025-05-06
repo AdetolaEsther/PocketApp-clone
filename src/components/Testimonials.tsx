@@ -61,30 +61,33 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="min-h-screen px-8 lg:px-24 py-16">
+        <div className="min-h-screen px-4 sm:px-8 lg:px-24 py-12 sm:py-16">
             <div className="max-w-[1200px] mx-auto">
                 <div className="relative mt-10 w-full">
-                    <div className="flex items-center mb-4">
-                        <h1 className="text-8xl font-extrabold text-[#212529]">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
+                        <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-[#212529]">
                             Testimonials
                         </h1>
-                        <button className="p-2 rounded-4xl text-[#1DA1F2] font-bold flex items-center gap-1 bg-[#c9f5ff] ">
+                        <button
+                            className="self-start sm:self-auto p-2 rounded-2xl text-[#1DA1F2] font-bold flex items-center gap-1 bg-[#c9f5ff]"
+                            aria-label="Follow PocketApp on Twitter"
+                        >
                             <TwitterIcon sx={{ color: "#1DA1F2" }} /> Follow
                             PocketApp
                         </button>
                     </div>
-                    <h2 className="text-4xl font-semibold text-[#98AFC7]">
-                        Here&apos;s what some users who have hopped on the
-                        PocketApp train have to say.
+                    <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold text-[#98AFC7]">
+                        Here's what some users who have hopped on the PocketApp
+                        train have to say.
                     </h2>
                 </div>
 
                 <div className="mt-12">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                         {getCurrentTestimonials().map((testimonial, index) => (
                             <div
                                 key={index}
-                                className="rounded-[2rem] shadow-lg p-8 border-2 flex flex-col h-full"
+                                className="rounded-[2rem] shadow-lg p-6 sm:p-8 border-2 flex flex-col h-full"
                             >
                                 <div className="flex items-center w-full mb-6">
                                     <div className="bg-gray-100 rounded-full p-3">
@@ -101,7 +104,7 @@ const Testimonials = () => {
                                 </div>
 
                                 <div className="flex-grow mb-4">
-                                    <p className="text-lg">
+                                    <p className="text-base sm:text-lg">
                                         &quot;{testimonial.text}&quot;
                                     </p>
                                 </div>
@@ -114,6 +117,7 @@ const Testimonials = () => {
                     <button
                         onClick={goToPreviousPage}
                         className="bg-gray-300 text-black p-2 rounded-full hover:bg-gray-400"
+                        aria-label="Previous testimonials"
                     >
                         <ArrowBackIcon />
                     </button>
@@ -121,13 +125,16 @@ const Testimonials = () => {
                     <button
                         onClick={goToNextPage}
                         className="bg-gray-300 text-black p-2 rounded-full hover:bg-gray-400"
+                        aria-label="Next testimonials"
                     >
                         <ArrowForwardIcon />
                     </button>
                 </div>
 
                 <div className="mt-16">
-                    <h2 className="text-3xl font-bold">In the Press:</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold">
+                        In the Press:
+                    </h2>
                 </div>
             </div>
         </div>
