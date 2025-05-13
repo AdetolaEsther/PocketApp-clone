@@ -57,7 +57,7 @@ const Shops = () => {
                         </div>
 
                         <div className="mt-24">
-                            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8">
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-8">
                                 Enjoy 0% commission and get a custom account
                                 number that reflects your business name when you
                                 set up a shop account on PocketApp

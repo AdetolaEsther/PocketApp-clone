@@ -5,7 +5,7 @@ const Cards = () => {
     return (
         <div className="min-h-screen px-4 sm:px-8 lg:px-24 py-12 sm:py-16">
             <div className="max-w-[1200px] mx-auto">
-                <div className="relative mt-10 w-full">
+                <div className="relative  w-full">
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-4">
                         <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-[#212529]">
                             Cards
@@ -31,7 +31,7 @@ const Cards = () => {
                         }}
                     >
                         <div>
-                            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+                            <h3 className="text-2xl sm:text-3xl md:text-3xl font-bold mb-6">
                                 Connect your physical card to your personal
                                 Pocket, Groups, and Shops. You&apos;re in
                                 complete control.
@@ -69,7 +69,7 @@ const Cards = () => {
                             <img
                                 src="/image-2.png"
                                 alt="Card visual"
-                                className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-auto mx-auto object-contain"
+                                className="w-full max-w-[200px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[300px] h-auto mx-auto object-contain"
                             />
                         </div>
                     </div>

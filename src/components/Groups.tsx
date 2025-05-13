@@ -5,7 +5,7 @@ const Groups = () => {
     return (
         <div className="min-h-screen px-4 sm:px-8 lg:px-24 py-12 sm:py-16">
             <div className="max-w-[1200px] mx-auto">
-                <div className="relative mt-10 w-full">
+                <div className="relative  w-full">
                     <h1 className="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-[#212529]">
                         Groups
                     </h1>

@@ -11,14 +11,15 @@ const FooterFaq = () => {
         <div className="flex justify-center px-4 md:px-8 lg:px-24 py-16">
             <div className="max-w-[1400px] w-full">
                 <div
-                    className="bg-[#f4f3f5] text-white rounded-4xl shadow-lg mt-12 flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 py-12 gap-8"
+                    className="relative bg-[#f4f3f5] text-white rounded-4xl shadow-lg mt-12 flex flex-col xl:flex-row items-start justify-between px-6 md:px-12 py-12 gap-8 overflow-hidden"
                     style={{
                         backgroundImage: "url('/wavy-bg-black.72ada49b.png')",
                         backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
                         backgroundColor: "#212337",
                     }}
                 >
-                    <div className="flex flex-col max-w-xl text-center lg:text-left">
+                    <div className="flex flex-col max-w-xl text-center xl:text-left z-10">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-[rgb(191,194,217)] mb-4">
                             Download the app
                         </h2>
@@ -27,7 +28,7 @@ const FooterFaq = () => {
                             daily money moves. Download PocketApp today to get
                             started.
                         </h2>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center xl:justify-start">
                             <button className="bg-[#f4f3f5] px-6 py-3 rounded-3xl text-[#212337] font-bold flex items-center gap-2">
                                 <AppleIcon /> App Store
                             </button>
@@ -37,13 +38,11 @@ const FooterFaq = () => {
                         </div>
                     </div>
 
-                    <div className="max-w-[300px] w-full">
-                        <img
-                            src="/footer-display.png"
-                            alt="App preview"
-                            className="w-full h-auto object-contain"
-                        />
-                    </div>
+                    <img
+                        src="/footer-display.png"
+                        alt="App preview"
+                        className="hidden xl:block xl:absolute xl:-bottom-10 xl:right-10 xl:max-w-[300px] w-full h-auto object-contain z-0"
+                    />
                 </div>
 
                 <div className="bg-[#f4f3f5] rounded-4xl shadow-lg mt-12 flex flex-wrap justify-center md:justify-between gap-6 px-6 md:px-16 py-8">
